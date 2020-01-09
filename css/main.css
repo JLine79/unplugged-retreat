@@ -437,11 +437,13 @@ aside{
   /**Aside **/
 
     aside .content-wrapper {
+      max-width: 640px;
       margin: 50px 0;
       display: flex;
       justify-content: space-between;
       flex-flow: row nowrap;
-    }
+      padding-left: 45px;
+          }
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
@@ -471,26 +473,36 @@ aside{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    padding-left: 25px;
   }
 
   .reviews article div{
-    width: 640px;
-    padding: 35px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+  }
+
+  .reviews h2{
+    padding-left: 35px;
+  }
+
+  .reviews h3{
+    width: 100%;
+  }
+
+  .reviews img{
+    width: 100%;
+    padding: 15px;
   }
 
 /** Footer **/
-
-  footer .content-wrapper {
-    width: 640px;
-    margin: 100px 0;
-  }
 
   .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
-    width: 60%;
+    width: 100%;
     }
 
   footer .contact {
@@ -500,6 +512,10 @@ aside{
   footer .copyright {
     width: 195px;
     }
+
+  h4{
+    width: 50%;
+  }
 
 /* ============================================================================
   ABOUT PAGE
