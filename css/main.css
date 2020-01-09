@@ -549,7 +549,19 @@ aside{
 /* ============================================================================
   FAQ
   ===========================================================================*/
+  .faq .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 640px;
+    justify-content: center;
+  }
 
+  .faq-content{
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+    padding-left: 20px;
+  }
 
 }
 
