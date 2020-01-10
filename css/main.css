@@ -108,6 +108,7 @@ textarea {
    font-family: 'Open Sans', sans-serif;
    font-size: 1em;
    text-align: left;
+   color: #e2e3ed;
  }
 
  ul,
@@ -128,15 +129,18 @@ textarea {
  h2 {
    font-family: 'Poppins', sans-serif;
    font-size: 1.875em;
+   font-weight: normal;
  }
 
  h3,
  h4 {
    font-family: 'Poppins', sans-serif;
    font-size: 1.125em;
+   font-weight: normal;
  }
 
  p {
+   font-size: 0.875em;
    line-height: 1.125em;
  }
 
@@ -152,10 +156,6 @@ textarea {
    font-family: 'Open Sans', sans-serif;
  }
 
- .content-wrapper {
-
- }
-
 .content-wrapper {
   width: 90%;
   margin: 0 20px 0 20px;
@@ -169,6 +169,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header{
@@ -181,7 +182,6 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
-  padding: 30px 65px 65px 30px;
 }
 
 .header-divider {
@@ -195,14 +195,16 @@ header nav{
   justify-content: space-around;
   align-items: center;
   flex-flow: row nowrap;
-  width: 60%;
+  width: 100%;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
-  width: 60%;
-  padding-left: 0;
+  flex-basis: 60%;
+  padding: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .footer-content{
@@ -210,7 +212,21 @@ header nav ul{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+}
+
+footer .copyright{
+  margin-top: 50px;
+}
+
+.footer-content h4{
+  width: 100%;
+  font-style: normal;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+
+.footer-content p{
+  text-align: center;
 }
 
 address.contact{
@@ -252,15 +268,8 @@ aside{
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 20px 50px 20px;
-}
-
-.form-description{
-
-}
-
-.form{
-
+  padding: 30px 20px 50px 20px;
+  background-color: #527158;
 }
 
 /* FEATURES */
@@ -287,6 +296,7 @@ aside{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 
@@ -297,7 +307,8 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
+  background-color: #2a423a;
+  padding: 30px 0 30px 0;
 }
 
 .reviews article{
@@ -318,6 +329,8 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  padding-bottom: 30px;
 }
 
 .mission-content{
@@ -335,6 +348,8 @@ aside{
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  padding-bottom: 30px;
 }
 
 .contact-section h1{
@@ -348,6 +363,8 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  padding-bottom: 30px;
 }
 
 .faq.content-wrapper{
@@ -355,6 +372,32 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #babbc2;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ==========================================================================
