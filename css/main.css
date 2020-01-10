@@ -400,7 +400,7 @@ aside{
   .content-wrapper {
     display: flex;
     flex-flow: row wrap;
-    max-width: 640px;
+    flex-basis: 80%;
     margin: 0;
   }
 
@@ -415,7 +415,7 @@ aside{
   header .content-wrapper{
     display: flex;
     justify-content: space-between;
-    max-width: 640px;
+    flex-basis; 80%;
     margin-left: 20px;
   }
 
@@ -562,12 +562,69 @@ aside{
     width: 40%;
     padding-left: 20px;
   }
-
 }
 
 @media all and (min-width: 1200px){
   /** DESKTOP STYLES **/
+
+/*=============================================================================
+BASE Styles
+=============================================================================*/
+/*Aside */
+
+aside{
+  display: flex;
+  justify-content: center;
 }
+
+/* Features */
+
+.features .content-wrapper h2{
+  display: flex;
+  flex-basis: 73%;
+}
+
+.features .features-items{
+  display: flex;
+  justify-content: center;
+  flex-basis: 68%;
+}
+
+/* Reviews */
+
+.reviews article{
+  align-items: flex-start;
+}
+
+/* Footer */
+
+  footer .footer-content h4{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .copyright{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+/*=============================================================================
+ABOUT page
+==============================================================================*/
+  .contact-section .contact div{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 50%;
+  }
+
+  .contact-section .contact div h3{
+    width: 100%;
+  }
+}
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
