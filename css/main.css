@@ -552,7 +552,7 @@ aside{
   .faq .content-wrapper{
     display: flex;
     flex-flow: row wrap;
-    max-width: 640px;
+    flex-basis: 80%;
     justify-content: center;
   }
 
@@ -621,6 +621,22 @@ ABOUT page
 
   .contact-section .contact div h3{
     width: 100%;
+  }
+
+/*==============================================================================
+FAQ page
+==============================================================================*/
+
+  .faq .content-wrapper{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .faq h1{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 }
 
