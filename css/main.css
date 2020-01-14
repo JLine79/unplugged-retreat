@@ -533,7 +533,7 @@ input[type=button] {
     display: flex;
     flex-flow: row wrap;
     margin: 0;
-    max-width: 640px;
+    flex-basis: 80%;
   }
 
   /* Header */
@@ -549,7 +549,7 @@ input[type=button] {
     justify-content: space-between;
     flex-basis; 85%;
     margin-left: 20px;
-    max-width: 640px;
+    flex-basis: 80%;
     padding-left: 45px;
   }
 
@@ -585,24 +585,24 @@ input[type=button] {
 
   /**Aside **/
 
-    aside .content-wrapper {
-      max-width: 640px;
-      margin: 43px 0;
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row nowrap;
-      padding-left: 45px;
-          }
+  aside .content-wrapper {
+    flex-basis: 80%;
+    margin: 43px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding-left: 45px;
+  }
 
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-      width: 265px;
-      margin: 0;
-    }
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 265px;
+    margin: 0;
+  }
 
-    aside h3{
-      width: 90%;
-    }
+  aside h3{
+    width: 90%;
+  }
 
 /** Features **/
 
@@ -619,10 +619,6 @@ input[type=button] {
     padding: 20px 40px 20px 40px;
     margin: 0;
     }
-
-  .features .features-item-description {
-    width: 100%;
-  }
 
   .fontawesome-icon{
     display: flex;
@@ -670,6 +666,10 @@ input[type=button] {
 
   h4{
     width: 50%;
+  }
+
+  footer .social h4{
+    margin-top: 15px;
   }
 
 /* ============================================================================
@@ -721,30 +721,77 @@ input[type=button] {
 /*=============================================================================
 BASE Styles
 =============================================================================*/
+
+  header .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 85%;
+    margin; 0;
+  }
+
+  header nav{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  h3,h4{
+    font-size: 1.875em;
+  }
+
+  p{
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+
+/* Hero Area */
+
+  .hero-area h1{
+    font-size: 3.75em;
+    width: 60%;
+  }
+
 /*Aside */
 
-aside{
-  display: flex;
-  justify-content: center;
-}
+  aside{
+    display: flex;
+    justify-content: center;
+  }
+
+  aside .content-wrapper {
+    flex-basis: 80%;
+    margin: 43px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    padding-left: 45px;
+  }
 
 /* Features */
 
-.features .content-wrapper h2{
-  display: flex;
-  flex-basis: 73%;
-}
+  .features h2{
+    padding-top: 75px;
+  }
 
-.features .features-items{
-  display: flex;
-  justify-content: center;
-  flex-basis: 68%;
-}
+  .features article{
+    display: flex;
+    flex-basis: 25%;
+    padding: 35px 25px 25px 35px
+  }
+
+  .features .features-items{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
 /* Reviews */
 
 .reviews article{
   align-items: flex-start;
+}
+
+.reviews article div{
+  margin-right: 40px;
 }
 
 /* Footer */
@@ -759,6 +806,10 @@ aside{
     display: flex;
     flex-basis: 100%;
     justify-content: center;
+  }
+
+  footer .social h4{
+    margin-top: 0;
   }
 
 /*=============================================================================
