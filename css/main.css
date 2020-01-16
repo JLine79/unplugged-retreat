@@ -329,6 +329,11 @@ aside{
   margin-bottom: 35px;
 }
 
+.features i{
+  font-size: 3.75em;
+  padding-bottom: 30px;
+}
+
 /* REVIEWS */
 
 .reviews{
