@@ -125,12 +125,14 @@ textarea {
    font-family: 'Poppins', sans-serif;
    font-size: 2.25em;
    font-weight: normal;
+   margin-top: 50px;
   }
 
  h2 {
    font-family: 'Poppins', sans-serif;
    font-size: 1.875em;
    font-weight: normal;
+   margin-top: 50px;
   }
 
  h3,
@@ -186,11 +188,6 @@ header figure{
   flex-flow: row wrap;
 }
 
-.header-divider{
-  background-image: url('../img/nav divider.png');
-  width: 100%;
-}
-
 header .content-wrapper{
   display: flex;
   justify-content: center;
@@ -200,6 +197,7 @@ header .content-wrapper{
 }
 
 .header-divider {
+  background-image: url('../img/nav divider.png');
   width: 100%;
   height: 1px;
   margin: 10px 0 10px 0;
@@ -243,6 +241,7 @@ footer .copyright{
 .footer-content p{
   text-align: center;
   font-style: normal;
+  margin-top: 0;
 }
 
 address.contact{
@@ -266,7 +265,7 @@ address.contact{
 /** Hero Area **/
 
 .hero-area{
-  background: url(../img/hero-image-jake-melara-30679-unsplash.jpg) center no-repeat #333;
+  background: url(../img/jake-melara-30679-unsplash-mob.jpg) center no-repeat #333;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -288,7 +287,7 @@ aside{
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  padding: 0 20px 0 20px;
+  padding: 30px 0 55px 0;
   background-color: #527158;
 }
 
@@ -312,7 +311,7 @@ aside{
 }
 
 .features article{
-  width: 55%;
+  width: 62%;
   padding: 30px 0;
   margin: 0;
 }
@@ -330,7 +329,6 @@ aside{
   margin-bottom: 35px;
 }
 
-
 /* REVIEWS */
 
 .reviews{
@@ -339,18 +337,16 @@ aside{
   align-items: center;
   flex-flow: row wrap;
   background-color: #2a423a;
-  padding: 30px 0 30px 0;
+  padding: 50px 0 30px 0;
 }
 
 .reviews article{
   width: 90%;
 }
+
 .reviews h2{
   width: 90%;
-}
-
-.reviews h3{
-  width: 50%;
+  margin-top: 0;
 }
 
 /* ------------------ MOBILE STYLES: ABOUT -------------------- */
@@ -398,11 +394,19 @@ aside{
   padding-bottom: 30px;
 }
 
+.faq h2{
+  margin: 50px 0 0 0;
+}
+
 .faq.content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq-content{
+  padding-top: 25px;
 }
 
 aside .form {
@@ -536,6 +540,10 @@ input[type=button] {
     flex-basis: 80%;
   }
 
+  h1{
+    margin-top: 90px;
+  }
+
   /* Header */
 
   header{
@@ -583,6 +591,16 @@ input[type=button] {
 
   /** Hero Area **/
 
+  .hero-area{
+    background: url(../img/jake-melara-30679-unsplash-tablet.jpg) center no-repeat #333;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 600px;
+    overflow: hidden;
+  }
+
   /**Aside **/
 
   aside .content-wrapper {
@@ -610,6 +628,10 @@ input[type=button] {
     display: flex;
   }
 
+  .features h2{
+    padding-left: 30px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -628,10 +650,15 @@ input[type=button] {
 
 /** Reviews **/
 
+  .reviews{
+    padding-top: 100px;
+  }
+
   .reviews article{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    width: 100%;
   }
 
   .reviews article div{
@@ -654,6 +681,7 @@ input[type=button] {
     align-items: center;
     flex-flow: row nowrap;
     width: 100%;
+    margin-top: 30px;
     }
 
   footer .contact {
@@ -669,22 +697,28 @@ input[type=button] {
   }
 
   footer .social h4{
-    margin-top: 15px;
+    margin-top: 25px;
   }
 
 /* ============================================================================
   ABOUT PAGE
   ============================================================================*/
 
+  .mission {
+    padding-top: 40px;
+  }
+
   .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px
+    width: 100%;
+    padding-bottom: 70px;
   }
 
   .mission-content p {
-    width: 45%;
+    width: 50%;
+    padding-right: 40px;
   }
 
   .contact-section .content-wrapper h1{
@@ -693,8 +727,12 @@ input[type=button] {
 
   .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
+  }
+
+  .contact div{
+    padding-right: 90px;
   }
 
 /* ============================================================================
@@ -704,14 +742,18 @@ input[type=button] {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 80%;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .faq h4{
+    font-size: 0.875em;
+    width: 100%;
   }
 
   .faq-content{
     display: flex;
     flex-flow: row wrap;
-    width: 40%;
-    padding-left: 20px;
+    width: 45%;
   }
 }
 
@@ -726,7 +768,7 @@ BASE Styles
     display: flex;
     justify-content: space-between;
     flex-basis: 85%;
-    margin; 0;
+    margin: 0 120px 0 120px;
   }
 
   header nav{
@@ -748,6 +790,15 @@ BASE Styles
   .hero-area h1{
     font-size: 3.75em;
     width: 60%;
+    margin-top: 50px;
+  }
+
+  .hero-area{
+    background: url(../img/hero-image-jake-melara-30679-unsplash-desktop.jpg) center no-repeat #333;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
   }
 
 /*Aside */
@@ -755,6 +806,7 @@ BASE Styles
   aside{
     display: flex;
     justify-content: center;
+    padding: 0;
   }
 
   aside .content-wrapper {
@@ -794,6 +846,10 @@ BASE Styles
   margin-right: 40px;
 }
 
+.reviews h2{
+  margin-bottom: 90px;
+}
+
 /* Footer */
 
   footer .footer-content h4{
@@ -815,6 +871,15 @@ BASE Styles
 /*=============================================================================
 ABOUT page
 ==============================================================================*/
+
+  .mission h2{
+    font-size: 3em;
+  }
+
+  .contact-section h2{
+    font-size: 3em;
+  }
+
   .contact-section .contact div{
     display: flex;
     flex-flow: row wrap;
@@ -834,15 +899,22 @@ FAQ page
     justify-content: flex-start;
   }
 
-  .faq h1{
+  .faq-content{
+    margin-right: 44px;
+  }
+
+  .faq h2{
     display: flex;
     flex-basis: 100%;
+    font-size: 3em;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding: 0px;
+  }
+
+  .faq h4{
+    font-size: 1.125em;
   }
 }
-
-
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
