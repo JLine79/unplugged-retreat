@@ -98,9 +98,72 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+ /* General Styles */
+
+ html {
+   font-size: 16px;
+ }
+
+ body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1em;
+   text-align: left;
+   color: #e2e3ed;
+ }
+
+ ul,
+ ol {
+   list-style-type: none;
+ }
+
+ a {
+  color: #e2e3ed;
+  text-decoration: none;
+ }
+
+ h1{
+   font-family: 'Poppins', sans-serif;
+   font-size: 2.25em;
+   font-weight: normal;
+   margin-top: 50px;
+  }
+
+ h2 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.875em;
+   font-weight: normal;
+   margin-top: 50px;
+  }
+
+ h3,
+ h4 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.125em;
+   font-weight: normal;
+   margin: 0;
+  }
+
+ p {
+   font-size: 0.875em;
+   line-height: 1.125em;
+ }
+
+ img {
+   width: 100%;
+   height: auto;
+ }
+
+ figure {
+   margin: 0;
+ }
+
+ address {
+   font-family: 'Open Sans', sans-serif;
+ }
+
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+  margin: 0 20px 0 20px;
 }
 
 /* ------------------ BASE HEADER/FOOTER STYLES -------------------- */
@@ -111,10 +174,19 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header{
   padding: 15px 0;
+}
+
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .content-wrapper{
@@ -126,61 +198,87 @@ header .content-wrapper{
 }
 
 .header-divider {
+  background-image: url('../img/nav divider.png');
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 
 header nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
-  width: 60%;
+  flex-flow: row nowrap;
+  width: 100%;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
-  width: 45%;
+  flex-basis: 60%;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-header.content-wrapper{
-  width: 90%;
-  margin: 0;
-}
-
-header.header-divider{
-  width: 30%;
-}
-
-footer.content-wrapper{
-  width: 55%;
-  margin: 50px 0;
-}
-
-footer.footer-content{
-  margin: 50px 0;
-}
-
-footer p{
-  margin: 0;
-}
-
-footer.social-icons{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer.social-icons p{
+.footer-content{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
-footer.copyright{
+footer .copyright{
+  margin-top: 50px;
+}
 
+.footer-content h4{
+  width: 100%;
+  font-style: normal;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+
+.footer-content p{
+  text-align: center;
+  font-style: normal;
+  margin-top: 0;
+}
+
+address.contact{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.social{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social-icons{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.social-icons p i{
+  font-size: 1.125em;
+}
+
+.social-icons p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #527158;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  margin: 0 20px 0 20px;
 }
 
 /* ------------------ MOBILE STYLES: HOMEPAGE -------------------- */
@@ -188,47 +286,49 @@ footer.copyright{
 /** Hero Area **/
 
 .hero-area{
+  background: url(../img/jake-melara-30679-unsplash-mob.jpg) center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  min-height: 500px;
+  overflow: hidden;
 }
 
-.content-wrapper{
+.contentwrapper h1{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row wrap;
-  width: 90%;
 }
 
 /** Aside **/
 
 aside{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 20px 20px 50px;
+  padding: 30px 0 55px 0;
+  background-color: #527158;
 }
 
-.form-description{
-
-}
-
-.form{
-
+.form h3{
+  padding-bottom: 15px;
 }
 
 /* FEATURES */
 
 .features{
+  background: url(../img/rawpixel-800820-unsplash.jpg) center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.features.content-wrapper{
-  margin: 55px 0;
+.features .content-wrapper{
+  padding-bottom: 30px;
 }
 
 .features p{
@@ -236,8 +336,8 @@ aside{
 }
 
 .features article{
-  width: 55%;
-  padding: 50px;
+  width: 62%;
+  padding: 30px 0;
   margin: 0;
 }
 
@@ -246,9 +346,18 @@ aside{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  padding: 45px 0;
+  text-align: center;
 }
 
+.fontawesome-icon{
+  width: 35%;
+  margin-bottom: 35px;
+}
+
+.features i{
+  font-size: 3.75em;
+  padding-bottom: 30px;
+}
 
 /* REVIEWS */
 
@@ -257,18 +366,17 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
+  background-color: #2a423a;
+  padding: 50px 0 30px 0;
 }
 
 .reviews article{
   width: 90%;
 }
+
 .reviews h2{
   width: 90%;
-}
-
-.reviews h3{
-  width: 50%;
+  margin-top: 0;
 }
 
 /* ------------------ MOBILE STYLES: ABOUT -------------------- */
@@ -278,14 +386,28 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  padding-bottom: 30px;
 }
 
 .mission-content{
   width: 90%;
 }
 
-.map{
+.map figure{
+  position: relative;
+  padding-bottom: 125%;
+  height: 0;
+  overflow: hidden;
   width: 100%;
+}
+
+.map iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /** CONTACT SECTION **/
@@ -295,14 +417,12 @@ aside{
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  padding-bottom: 30px;
 }
 
 .contact-section h1{
   width: 90%;
-}
-
-.contact{
-  width: 40%;
 }
 
 /* ------------------ MOBILE STYLES: FAQ -------------------- */
@@ -312,6 +432,12 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  padding-bottom: 30px;
+}
+
+.faq h2{
+  margin: 50px 0 0 0;
 }
 
 .faq.content-wrapper{
@@ -319,6 +445,36 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq-content{
+  padding-top: 25px;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #babbc2;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -410,8 +566,423 @@ aside{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media all and (min-width: 768px){
+  /** TABLET STYLES **/
+
+  /* ==========================================================================
+  HOME PAGE
+  ===========================================================================*/
+
+  /*General Styles */
+
+  .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 83%;
+    margin: 0;
+  }
+
+  h1{
+    margin-top: 90px;
+  }
+
+  /* Header */
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  header .content-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header figure{
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header nav{
+    display: flex;
+    width: 25%;
+  }
+
+  header nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  header nav ul li{
+    font-size: 1em;
+    padding-left: 38px;
+  }
+
+  /** Hero Area **/
+
+  .hero-area{
+    background: url(../img/jake-melara-30679-unsplash-tablet.jpg) center no-repeat #333;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+  /**Aside **/
+
+  aside{
+    padding-top: 50px;
+  }
+
+  aside .content-wrapper {
+    flex-basis: 83%;
+    margin: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding-left: 45px;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 265px;
+    margin: 0;
+  }
+
+  aside h3{
+    width: 90%;
+  }
+
+/** Features **/
+
+  .features .content-wrapper{
+    display: flex;
+    flex-basis: 83%;
+  }
+
+  .features h2{
+    padding: 50px 0 30px 0;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 33%;
+    padding: 20px 40px 20px 40px;
+    margin: 0;
+    }
+
+  .fontawesome-icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+/** Reviews **/
+
+  .reviews{
+    padding: 0;
+  }
+
+  .reviews .content-wrapper{
+    margin: 100px 0 100px 0;
+  }
+
+  .reviews article{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .reviews article div{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    margin-right: 15px;
+  }
+
+  .reviews h3{
+    width: 100%;
+    margin: 0;
+  }
+
+/** Footer **/
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-top: 30px;
+    }
+
+  footer .contact {
+    margin-bottom: 0;
+    }
+
+  footer .copyright {
+    width: 195px;
+    }
+
+  h4{
+    width: 50%;
+  }
+
+  footer .social h4{
+    margin-top: 25px;
+  }
+
+/* ============================================================================
+  ABOUT PAGE
+  ============================================================================*/
+
+  .mission {
+    padding-top: 40px;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+
+  .mission-content p {
+    width: 50%;
+    padding-right: 40px;
+  }
+
+  .contact-section .content-wrapper h1{
+    width: 80%;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .contact div{
+    padding-right: 90px;
+  }
+
+  .map figure{
+    padding-bottom: 45%;
+  }
+
+/* ============================================================================
+  FAQ
+  ===========================================================================*/
+  .faq .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 80%;
+    justify-content: space-between;
+  }
+
+  .faq h4{
+    font-size: 0.875em;
+    width: 100%;
+  }
+
+  .faq-content{
+    display: flex;
+    flex-flow: row wrap;
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 1200px){
+  /** DESKTOP STYLES **/
+
+/*=============================================================================
+BASE Styles
+=============================================================================*/
+
+  h3,h4{
+    font-size: 1.875em;
+  }
+
+  p{
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+
+/* Header */
+
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 83%;
+  }
+
+  header figure{
+    width: 50%;
+  }
+
+/* Hero Area */
+
+  .hero-area h1{
+    font-size: 3.75em;
+    width: 60%;
+    margin-top: 50px;
+  }
+
+  .hero-area{
+    background: url(../img/hero-image-jake-melara-30679-unsplash-desktop.jpg) center no-repeat #333;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+/*Aside */
+
+  aside{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  aside .content-wrapper {
+    flex-basis: 80%;
+    margin: 43px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    padding-left: 45px;
+  }
+
+/* Features */
+
+  .features h2{
+    padding-top: 75px;
+  }
+
+  .features article{
+    display: flex;
+    flex-basis: 25%;
+    padding: 35px 25px 25px 35px
+  }
+
+  .features .features-items{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+/* Reviews */
+
+  .reviews article{
+    align-items: flex-start;
+  }
+
+  .reviews article div{
+    margin-right: 40px;
+  }
+
+  .reviews h2{
+    margin-bottom: 90px;
+  }
+
+/* Footer */
+
+  footer .footer-content h4{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .copyright{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  footer .social h4{
+    margin-top: 0;
+  }
+
+/*=============================================================================
+ABOUT page
+==============================================================================*/
+
+  .mission h2{
+    font-size: 3em;
+  }
+
+  .map figure{
+    padding-bottom: 38%;
+  }
+
+  .contact-section h2{
+    font-size: 3em;
+  }
+
+  .contact-section .contact div{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 50%;
+  }
+
+  .contact-section .contact div h3{
+    width: 100%;
+  }
+
+/*==============================================================================
+FAQ page
+==============================================================================*/
+
+  .faq .content-wrapper{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .faq-content{
+    display: flex;
+    flex-basis: 45%;
+    flex-flow: row wrap;
+    font-size: 0.6em;
+    margin-right: 44px;
+  }
+
+  .faq-content h4{
+    width: 100%;
+  }
+
+  .faq h2{
+    display: flex;
+    flex-basis: 100%;
+    font-size: 3em;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+
+  .faq h4{
+    font-size: 1.875em;
+  }
 }
 
 @media print,
