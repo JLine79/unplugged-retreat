@@ -102,14 +102,18 @@ textarea {
 
  html {
    font-size: 16px;
+   padding: 0;
+   margin: 0;
  }
 
  body {
+   background-color: #202322;
    font-family: 'Open Sans', sans-serif;
    font-size: 1em;
    text-align: left;
    color: #e2e3ed;
- }
+   padding: 0;
+  }
 
  ul,
  ol {
@@ -125,7 +129,7 @@ textarea {
    font-family: 'Poppins', sans-serif;
    font-size: 2.25em;
    font-weight: normal;
-   margin-top: 50px;
+   padding-top: 50px;
   }
 
  h2 {
@@ -175,10 +179,9 @@ footer {
   align-items: center;
   flex-flow: row wrap;
   background-color: #202322;
-}
-
-header{
-  padding: 15px 0;
+  padding-top: 20px;
+  overflow: hidden;
+  margin: 0;
 }
 
 header figure{
@@ -194,7 +197,6 @@ header .content-wrapper{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 .header-divider {
