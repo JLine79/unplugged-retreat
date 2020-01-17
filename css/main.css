@@ -785,6 +785,7 @@ input[type=button] {
 
   .map figure{
     padding-bottom: 45%;
+  }
 
 /* ============================================================================
   FAQ
@@ -826,21 +827,20 @@ BASE Styles
 
 /* Header */
 
-header .content-wrapper{
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 80%;
-  margin: 0 120px 0 120px;
-}
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
 
-header figure{
-  margin-left: 10px;
-}
+  header .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 83%;
+  }
 
-header nav{
-  display: flex;
-  justify-content: flex-end;
-}
+  header figure{
+    width: 50%;
+  }
 
 /* Hero Area */
 
@@ -895,17 +895,17 @@ header nav{
 
 /* Reviews */
 
-.reviews article{
-  align-items: flex-start;
-}
+  .reviews article{
+    align-items: flex-start;
+  }
 
-.reviews article div{
-  margin-right: 40px;
-}
+  .reviews article div{
+    margin-right: 40px;
+  }
 
-.reviews h2{
-  margin-bottom: 90px;
-}
+  .reviews h2{
+    margin-bottom: 90px;
+  }
 
 /* Footer */
 
@@ -935,6 +935,7 @@ ABOUT page
 
   .map figure{
     padding-bottom: 38%;
+  }
 
   .contact-section h2{
     font-size: 3em;
@@ -960,7 +961,15 @@ FAQ page
   }
 
   .faq-content{
+    display: flex;
+    flex-basis: 45%;
+    flex-flow: row wrap;
+    font-size: 0.6em;
     margin-right: 44px;
+  }
+
+  .faq-content h4{
+    width: 100%;
   }
 
   .faq h2{
@@ -972,7 +981,7 @@ FAQ page
   }
 
   .faq h4{
-    font-size: 1.125em;
+    font-size: 1.875em;
   }
 }
 
