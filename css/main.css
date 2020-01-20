@@ -130,6 +130,7 @@ textarea {
    font-size: 2.25em;
    font-weight: normal;
    padding-top: 50px;
+   margin: 0px;
   }
 
  h2 {
@@ -803,6 +804,10 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .faq h2{
+    width: 100%;
+  }
+
   .faq h4{
     font-size: 0.875em;
     width: 100%;
@@ -853,7 +858,7 @@ BASE Styles
   .hero-area h1{
     font-size: 3.75em;
     width: 60%;
-    margin-top: 50px;
+    margin: 0px;
   }
 
   .hero-area{
